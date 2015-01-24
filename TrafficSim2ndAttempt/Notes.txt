@@ -1,0 +1,7 @@
+TrafficSim
+Goal: More or less just a learning project to build a "Game" based on effeciency and order. Ironically this idea will have to be reflected in the code by building a program that will run with effeciency and order. Neat right?
+
+Current:
+▲ Cars drive in a straight path to destination
+▲ GameMaster rolls through the houses and randomly generates a time that it's car or cars will go to work (But unfortunately because random number generation in computers doesn't exist, large blocks of houses all choose the same time)
+▲ Cars detect objects directly infront of them, still crash into eachothers sides though (could be fixed by putting rays to cast on far left and far right as well as in the middle)
