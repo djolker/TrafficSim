@@ -22,14 +22,17 @@ public class Car : MonoBehaviour {
 //		else
 			//reRoute();
 	}
-	
+
 	void avoidanceChecks()
 	{
 		Vector3 fwd = transform.TransformDirection(Vector3.forward);
 		RaycastHit hit;
-		if(Physics.Raycast(transform.position, fwd, out hit, 2f))
+		Debug.DrawRay(transform.position, fwd);
+		if(Physics.Raycast(transform.position, fwd, out hit, 3.5f))
 		{
 			bool driving = false;
+
+			//if the object directly in front of the car is the business then keep driving
 			if(hit.collider.name == "Business")
 			{
 				driveToTarget();
@@ -65,6 +68,14 @@ public class Car : MonoBehaviour {
 		}
 	}
 
+    public carDetail getCarDetails()
+    {
+		carDetail thisCar = new carDetail();
+		thisCar.setCarDetailValues(target, home, work, carSpeed);
+		return thisCar;
+    }
+
+	//TODO: THIS
 	void reRoute()
 	{
 		bool rerouting = true;
@@ -123,6 +134,7 @@ public class Car : MonoBehaviour {
 		}
 		else if(col.collider.name == "Business")
 		{
+			Debug.Log("Ding");
 			Destroy(this.gameObject);
 			enabled = false;
 		}

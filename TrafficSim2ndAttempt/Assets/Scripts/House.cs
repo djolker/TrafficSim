@@ -28,6 +28,18 @@ public class House : MonoBehaviour {
         }
 	}
 
+	public void setLeavingTime(int time)
+	{
+		if (time.ToString().Length == 2)
+		{
+			leavingTime = "7:" + time;
+		}
+		else
+		{
+			leavingTime = "7:0" + time;
+		}
+	}
+
 	public void generateNewLeavingTime()
 	{
 		System.Random rnd = new System.Random();

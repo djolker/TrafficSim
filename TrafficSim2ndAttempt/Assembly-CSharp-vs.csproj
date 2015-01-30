@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Business.cs" />
      <Compile Include="Assets\Scripts\Car.cs" />
+     <Compile Include="Assets\Scripts\Caster.cs" />
+     <Compile Include="Assets\Scripts\Classes\carDetail.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
      <Compile Include="Assets\Scripts\House.cs" />
      <Compile Include="Assets\Scripts\UserActions.cs" />

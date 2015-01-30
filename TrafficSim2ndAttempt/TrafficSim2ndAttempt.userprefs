@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameMaster.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Caster.cs">
     <Files>
-      <File FileName="Assets\Scripts\Car.cs" Line="52" Column="18" />
-      <File FileName="Assets\Scripts\House.cs" Line="18" Column="12" />
-      <File FileName="Assets\Scripts\UserActions.cs" Line="13" Column="72" />
-      <File FileName="Assets\Scripts\Business.cs" Line="19" Column="1" />
-      <File FileName="Assets\Scripts\GameMaster.cs" Line="107" Column="3" />
+      <File FileName="Assets\Scripts\Caster.cs" Line="24" Column="6" />
+      <File FileName="Assets\Scripts\GameMaster.cs" Line="51" Column="52" />
+      <File FileName="Assets\Scripts\House.cs" Line="45" Column="26" />
+      <File FileName="Assets\Scripts\Business.cs" Line="33" Column="14" />
+      <File FileName="Assets\Scripts\Car.cs" Line="30" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

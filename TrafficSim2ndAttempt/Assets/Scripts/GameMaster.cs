@@ -11,13 +11,12 @@ public class GameMaster : MonoBehaviour {
     public string time;
     private double timePassed;
 
-    private float hour;
+    public float hour;
     public float minute;
 	#endregion
 
 	public int carCrashes;
 	public int carsStuck;
-
 
 	public List<GameObject> houses = new List<GameObject>();
 	public List<GameObject> businesses = new List<GameObject>();
@@ -34,7 +33,6 @@ public class GameMaster : MonoBehaviour {
 		businesses = countBusinesses();
 		cars = countCars();
 		initHouses();
-
 	}
 	
 	// Update is called once per frame
@@ -46,9 +44,11 @@ public class GameMaster : MonoBehaviour {
 
 	void initHouses()
 	{
+		System.Random rnd = new System.Random();
 		foreach(GameObject house in houses)
 		{
-			house.GetComponent<House>().generateNewLeavingTime();
+			int tim = rnd.Next(0,30);
+			house.GetComponent<House>().setLeavingTime(tim);
 		}
 	}
 
@@ -100,10 +100,14 @@ public class GameMaster : MonoBehaviour {
 		{
 			businesses.Add(go);
 		}
+
+        return businesses;
 	}
 
 	List<GameObject> countCars()
 	{
+        List<GameObject> cars = new List<GameObject>();
 
+        return cars;
 	}
 }
